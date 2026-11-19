@@ -16,8 +16,8 @@
     <table border="1">
         <thead>
             <tr>
-                <th>Description</th>
-                <th class="right">Price</th>
+                <th>Mô tả sản phẩm</th>
+                <th class="right">Giá</th>
                 <th>&nbsp;</th>
             </tr>
         </thead>
@@ -28,7 +28,7 @@
                 <td>
                     <form action="cart" method="post">
                         <input type="hidden" name="productCode" value="8601">
-                        <input type="submit" value="Add To Cart">
+                        <input type="submit" value="Thêm vào giỏ hàng">
                     </form>
                 </td>
             </tr>
@@ -39,7 +39,7 @@
                 <td>
                     <form action="cart" method="post">
                         <input type="hidden" name="productCode" value="pf01">
-                        <input type="submit" value="Add To Cart">
+                        <input type="submit" value="Thêm vào giỏ hàng">
                     </form>
                 </td>
             </tr>
@@ -50,7 +50,7 @@
                 <td>
                     <form action="cart" method="post">
                         <input type="hidden" name="productCode" value="pf02">
-                        <input type="submit" value="Add To Cart">
+                        <input type="submit" value="Thêm vào giỏ hàng">
                     </form>
                 </td>
             </tr>
@@ -61,7 +61,7 @@
                 <td>
                     <form action="cart" method="post">
                         <input type="hidden" name="productCode" value="jr01">
-                        <input type="submit" value="Add To Cart">
+                        <input type="submit" value="Thêm vào giỏ hàng">
                     </form>
                 </td>
             </tr>

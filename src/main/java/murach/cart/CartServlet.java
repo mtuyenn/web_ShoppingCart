@@ -70,6 +70,10 @@ public class CartServlet extends HttpServlet {
             url = "/cart.jsp";
         } else if (action.equals("checkout")) {
             url = "/checkout.jsp";
+        }else if (action.equals("confirm")) {
+            HttpSession session = request.getSession();
+            session.removeAttribute("cart");
+            url = "/index.jsp";
         }
 
         sc.getRequestDispatcher(url).forward(request, response);

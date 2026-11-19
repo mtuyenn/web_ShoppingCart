@@ -15,10 +15,10 @@
     <table border="1">
         <thead>
             <tr>
-                <th>Quantity</th>
-                <th>Description</th>
-                <th class="right">Price</th>
-                <th class="right">Amount</th>
+                <th>Số lượng</th>
+                <th>Mô tả sản phẩm</th>
+                <th class="right">Giá</th>
+                <th class="right">Tổng số tiền</th>
                 <th>&nbsp;</th>
             </tr>
         </thead>
@@ -47,16 +47,16 @@
         </tbody>
     </table>
 
-    <p><b>To change the quantity</b>, enter the new quantity and click on the Update button.</p>
+    <p><b>Để thay đổi số lượng</b>, nhập số lượng mới và click vào nút Update.</p>
 
     <form action="cart" method="post">
         <input type="hidden" name="action" value="shop">
-        <input type="submit" value="Continue Shopping">
+        <input type="submit" value="Tiếp tục mua sắm">
     </form>
 
     <form action="cart" method="post">
         <input type="hidden" name="action" value="checkout">
-        <input type="submit" value="Checkout">
+        <input type="submit" value="Thanh toán">
     </form>
 
 </body>

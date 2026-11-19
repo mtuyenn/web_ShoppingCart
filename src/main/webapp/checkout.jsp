@@ -16,10 +16,10 @@
     <table border="1">
         <thead>
             <tr>
-                <th>Quantity</th>
-                <th>Description</th>
-                <th class="right">Price</th>
-                <th class="right">Amount</th>
+                <th>Số lượng</th>
+                <th>Mô tả sản phẩm</th>
+                <th class="right">Giá</th>
+                <th class="right">Tổng số tiền</th>
             </tr>
         </thead>
         <tbody>
@@ -41,8 +41,12 @@
     <!-- Nút quay lại trang chủ mua tiếp -->
     <form action="cart" method="post">
         <input type="hidden" name="action" value="shop">
-        <input type="submit" value="Continue Shopping">
+        <input type="submit" value="Quay lại mua tiếp">
     </form>
 
+    <form action="cart" method="post">
+        <input type="hidden" name="action" value="confirm">
+        <input type="submit" value="Xác nhận thanh toán">
+    </form>
 </body>
 </html>
