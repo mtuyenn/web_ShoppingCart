@@ -12,6 +12,7 @@
     <properties>
         <maven.compiler.release>17</maven.compiler.release>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <war.outputDirectory>${project.build.directory}</war.outputDirectory>
     </properties>
 
     <dependencies>
@@ -47,7 +48,7 @@
                 <artifactId>maven-war-plugin</artifactId>
                 <version>3.4.0</version>
                 <configuration>
-                    <outputDirectory>C:\Program Files\Apache Software Foundation\Tomcat 11.0\webapps</outputDirectory>
+                    <outputDirectory>${war.outputDirectory}</outputDirectory>
                 </configuration>
             </plugin>
         </plugins>
