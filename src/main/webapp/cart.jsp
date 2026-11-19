@@ -29,7 +29,7 @@
                         <form action="cart" method="post">
                             <input type="hidden" name="productCode" value="${item.product.code}">
                             <input type="text" name="quantity" value="${item.quantity}" style="width: 35px;">
-                            <input type="submit" value="Update">
+                            <input type="submit" value="Cập nhật">
                         </form>
                     </td>
                     <td>${item.product.description}</td>
@@ -39,7 +39,7 @@
                         <form action="cart" method="post">
                             <input type="hidden" name="productCode" value="${item.product.code}">
                             <input type="hidden" name="quantity" value="0">
-                            <input type="submit" value="Remove Item">
+                            <input type="submit" value="Xóa khỏi giỏ hàng">
                         </form>
                     </td>
                 </tr>
@@ -47,7 +47,7 @@
         </tbody>
     </table>
 
-    <p><b>Để thay đổi số lượng</b>, nhập số lượng mới và click vào nút Update.</p>
+    <p><b>Để thay đổi số lượng</b>, nhập số lượng mới và click vào nút Cập nhật.</p>
 
     <form action="cart" method="post">
         <input type="hidden" name="action" value="shop">

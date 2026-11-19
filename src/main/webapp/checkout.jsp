@@ -32,7 +32,7 @@
                 </tr>
             </c:forEach>
             <tr>
-                <td colspan="3" class="right"><b>Subtotal</b></td>
+                <td colspan="3" class="right"><b>Tổng cộng</b></td>
                 <td class="right">${cart.formattedSubtotal}</td>
             </tr>
         </tbody>
