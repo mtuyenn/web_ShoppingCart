@@ -2,6 +2,8 @@ package murach.business;
 
 import java.io.Serializable;
 import java.util.ArrayList;
+import java.text.NumberFormat;
+import java.util.Locale;
 
 public class Cart implements Serializable {
     private ArrayList<LineItem> items;
@@ -40,5 +42,18 @@ public class Cart implements Serializable {
                 return;
             }
         }
+    }
+
+    public double getSubtotal() {
+        double total = 0.0;
+        for (LineItem item : items) {
+            total += item.getTotal();
+        }
+        return total;
+    }
+
+    public String getFormattedSubtotal() {
+        NumberFormat currency = NumberFormat.getCurrencyInstance(Locale.US);
+        return currency.format(getSubtotal());
     }
 }

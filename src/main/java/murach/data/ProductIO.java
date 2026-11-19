@@ -26,9 +26,4 @@ public class ProductIO {
         }
         return p;
     }
-
-    // Nạp chồng (overload) để ai gọi 2 tham số cũng chạy được
-    public static Product getProduct(String productCode, String filepath) {
-        return getProduct(productCode);
-    }
 }
